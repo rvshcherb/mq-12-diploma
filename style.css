@@ -72,7 +72,7 @@ body {
 }
 
 .header_second-line {
-  display: inline-block;
+  display: block;
   margin: 30px 0 0 45px;
 }
 
@@ -117,4 +117,54 @@ body {
   margin-right: 10px;
   margin-left: 83px;
   fill: #ffffff;
+}
+
+@media screen and (min-width: 641px) and (max-width: 960px) {
+  
+  .first-screen {
+    max-width: 960px;
+    background-image: url(img/football_1280.jpg);
+  }
+
+  .first-screen__header__wrapper h1 {
+    font: normal 700 4rem/1.5 Open Sans, Arial, sans-serif;
+    letter-spacing: 5px;
+  }
+
+  .header_second-line {
+    margin: 0 0 0 45px;
+  }
+
+  .download-button-block {
+    margin-top: 260px;
+  }
+
+  .download-button {
+    justify-content: center;
+    width: 315px;  
+    height: 80px;
+    font: normal 400 0.875rem/1.5 Open Sans, Arial, sans-serif;
+    border-radius: 50px;
+  }
+
+  .download-button:first-child {
+    margin-right: 32px;
+  }
+
+  .download-button-block {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .appstore-icon {
+    width: 36px;
+    height: 42px;
+    margin: 0 30px 0 0;
+  }
+
+  .googleplay-icon {
+    width: 41px;
+    height: 45px;
+    margin: 0 30px 0 0;
+  }
 }
