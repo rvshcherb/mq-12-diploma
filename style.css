@@ -16,108 +16,105 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+
+}
 body {
   margin: 0;
 }
 
-.first-screen-wrapper {
+.first-screen {
   position: relative;
-  padding: 35px 20px 0;
   width: 100%;
   max-width: 640px;
   min-width: 320px;
   height: 100vh;
-  background-color: #1c1f40;
+  padding: 33px 20px 0 20px;
   background-image: url(img/football_767.jpg);
   background-size: cover;
+  background-color:#1c1c3e;
 }
 
-.first-screen-wrapper::after {
-  position: absolute;
+.first-screen::after {
   content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #161638;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #040444;
   opacity: 0.9;
-  z-index: 0;
 }
-
-.first-screen {
-  display: flex;
-  flex-direction: column;
-}
-
-
-.logo {
-  position: relative;
-  z-index: 1;
-  width: 133px;
-  height: 36px;
-  margin: 0 auto;
-  fill: white;
-}
-
+ 
 .first-screen__header {
   position: relative;
   z-index: 1;
-  color: #ffffff;
-  margin-top: 24vh;
-  margin-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.first-screen__header h1 {
+/* не работает свойство fill */
+.logo {
+  fill: red;
+}
+
+.first-screen__header__wrapper {
+  margin-top: 15vh;
+}
+
+.first-screen__header__wrapper h1 {
+  font: normal 700 1.75rem/1.2 Open Sans, Arial, sans-serif;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: Open Sans;
-  font-weight: 700;
-  font-size: 28px;
-  letter-spacing: 2px;
-  line-height: 1.4;
+  color: #ffffff;
 }
 
-.first-screen__header__second-line {
-  display: block;
-  margin-left: 45px;
-  margin-top: 30px;
+.header_second-line {
+  display: inline-block;
+  margin: 30px 0 0 45px;
+}
+
+.download-button-block {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
 }
 
 .download-button {
   display: flex;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  margin-bottom: 15px;
-  width: 100%;
+  width: 280px;  
   height: 35px;
-  font-family: open sans;
+  margin-bottom: 15px;
+  font: normal 400 0.5rem/1.5 Open Sans, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: left;
   color: #ffffff;
-  border-radius: 20px;
-  background-color: #5e42b0;
+  background-color:#5e42b0;
   border: 0;
+  border-radius: 30px;
 }
 
 .download-button p {
   margin: 0;
-  text-align: left;
-  text-transform: uppercase;
 }
 
 .appstore-icon {
   width: 20px;
+  height: 24px;
   margin-right: 10px;
-  margin-top: 4px;
+  margin-left: 83px;
   fill: #ffffff;
 }
 
 .googleplay-icon {
-  width: 20px;
+  width: 22px;
+  height: 24px;
   margin-right: 10px;
-  margin-top: 4px;
+  margin-left: 83px;
   fill: #ffffff;
-  overflow: visible;
-}
-
-.googleplay-label {
-  padding-right: 30px;
 }
