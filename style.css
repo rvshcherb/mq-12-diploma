@@ -17,7 +17,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 62.5%;
 
 }
 body {
@@ -63,11 +63,12 @@ body {
   flex-direction: column;
   align-items: center;
   margin-bottom: 90px;
+  width: 260px;
 }
 
 .first-screen__header h1 {
   margin: 0;
-  font: normal 700 1.75rem/1.2 Open Sans, Arial, sans-serif;
+  font: normal 700 2.8rem/1.2 Open Sans, Arial, sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #ffffff;
@@ -90,7 +91,7 @@ body {
   display: flex;
   width: 280px;  
   height: 35px;
-  font: normal 400 0.5rem/1.5 Open Sans, Arial, sans-serif;
+  font: normal 400 0.8rem/1.5 Open Sans, Arial, sans-serif;
   text-transform: uppercase;
   text-align: left;
   color: #ffffff;
@@ -132,7 +133,7 @@ body {
 .members__header h2 {
   margin: 0;
   padding-left: 20px;
-  font: normal 700 3.125rem/1.2 Open Sans, Arial, sans-serif;
+  font: normal 700 5rem/1.2 Open Sans, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #e7e7e7;
@@ -167,7 +168,7 @@ body {
 
 .members-advantages__header h3 {
   margin: 0 10px 30px;
-  font: normal 700 1.4375rem/1 Open Sans, Arial, sans-serif;
+  font: normal 700 2.3rem/1 Open Sans, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #c1c1c1;
@@ -175,7 +176,7 @@ body {
 
 .members-advantages__header__number {
   position: relative;
-  font: normal 700 0.875rem/1.1 Open Sans, Arial, sans-serif;
+  font: normal 700 1.4rem/1.1 Open Sans, Arial, sans-serif;
 }
 
 .members-advantages__header__number::after {
@@ -217,15 +218,40 @@ body {
 
 .members-advantages p {
   margin-top: 0;
-  font: normal 400 0.9375rem/1.3 Open Sans, Arial, sans-serif;
+  font: normal 400 1.5rem/1.3 Open Sans, Arial, sans-serif;
   letter-spacing: 1px;
 }
 
 .benefits {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-bottom: 65px;
   min-width: 320px;
+}
+
+.benefits::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 350px;
+  top: 0px;
+  left: 0px;
+  background-image: url(img/be-active_640.jpg);
+  background-size: cover;
+}
+
+.active.benefits::before {
+  background-image: url(img/be-active_640.jpg);
+}
+
+.contact.benefits::before {
+  background-image: url(img/find-contact_640.jpg);
+}
+
+.work.benefits::before {
+  background-image: url(img/work-it_640.jpg);
 }
 
 .benefits__header {
@@ -238,18 +264,9 @@ body {
   position: relative;
   padding: 26px;
   margin: 290px 0 20px 20px;
-  font: normal 700 0.875rem/1.5 Open Sans, Arial, sans-serif;
+  font: normal 700 1.4rem/1.5 Open Sans, Arial, sans-serif;
   color: #ffffff;
   background-color:#5e42b0;
-}
-
-.benefits__header::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 350px;
-  min-width: 320px;
-  background-size: cover;
 }
 
 .benefits__header__number::after {
@@ -262,21 +279,9 @@ body {
   background-color:#8f7bc8;
 }
 
-.active .benefits__header::before {
-  background-image: url(img/be-active_640.jpg);
-}
-
-.contact .benefits__header::before {
-  background-image: url(img/find-contact_640.jpg);
-}
-
-.work .benefits__header::before {
-  background-image: url(img/work-it_640.jpg);
-}
-
 .benefits__header h3 {
   margin: 0 0 25px 20px;
-  font: normal 700 1.75rem/1.2 Open Sans, Arial, sans-serif;
+  font: normal 700 2.8rem/1.2 Open Sans, Arial, sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #e7e7e7;
@@ -285,7 +290,7 @@ body {
 .benefits p {
   margin-top: 0;
   padding: 0 20px;
-  font: normal 400 1rem/1.5 Open Sans, Arial, sans-serif;
+  font: normal 400 1.6rem/1.5 Open Sans, Arial, sans-serif;
   letter-spacing: 1px;
 }
 
@@ -329,7 +334,7 @@ body {
   position: relative;
   z-index: 1;
   margin: 0;
-  font: normal 700 2rem/1.2 Open Sans, Arial, sans-serif;
+  font: normal 700 3.2rem/1.2 Open Sans, Arial, sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -340,7 +345,7 @@ body {
   z-index: 1;
   margin-top: 0;
   margin-bottom: 75px;
-  font: normal 400 0.875rem/1.4 Open Sans, Arial, sans-serif;
+  font: normal 400 1.4rem/1.4 Open Sans, Arial, sans-serif;
   color: #9b8ec1;
   text-transform: uppercase;
 }
@@ -371,15 +376,16 @@ body {
 
   .first-screen__header {
     margin-bottom: 300px;
+    width: 630px;
   }
 
   .first-screen__header h1 {
-    font: normal 700 4rem/1.2 Open Sans, Arial, sans-serif;
+    font: normal 700 6.4rem/1.2 Open Sans, Arial, sans-serif;
     letter-spacing: 5px;
   }
 
   .header_second-line {
-    margin: 0 0 0 45px;
+    margin: 0 0 0 110px;
   }
 
   .download-button-block {
@@ -391,7 +397,7 @@ body {
     justify-content: center;
     width: 41vw;  
     height: 80px;
-    font: normal 400 0.875rem/1.5 Open Sans, Arial, sans-serif;
+    font: normal 400 1.4rem/1.5 Open Sans, Arial, sans-serif;
     border-radius: 50px;
   }
 
@@ -428,7 +434,7 @@ body {
 
   .members__header h2 {
     padding-left: 0;
-    font: normal 700 5rem/1 Open Sans, Arial, sans-serif;
+    font: normal 700 8rem/1 Open Sans, Arial, sans-serif;
   }
 
   .athlets .members__header::after {
@@ -456,12 +462,12 @@ body {
 
   .members-advantages__header h3 {
     margin-bottom: 30px;
-    font: normal 700 2rem/1 Open Sans, Arial, sans-serif;
+    font: normal 700 3.2rem/1 Open Sans, Arial, sans-serif;
     letter-spacing: 2px;
   }
 
   .members-advantages__header__number {
-    font: normal 700 1.125rem/1.1 Open Sans, Arial, sans-serif;
+    font: normal 700 1.8rem/1.1 Open Sans, Arial, sans-serif;
   }
   
   .members-advantages__header__number::after {
@@ -480,7 +486,7 @@ body {
   }
 
   .members-advantages p {
-    font: normal 400 1rem/1.5 Open Sans, Arial, sans-serif;
+    font: normal 400 1.6rem/1.5 Open Sans, Arial, sans-serif;
   }
 
   .players .members-advantages p {
@@ -491,19 +497,19 @@ body {
     padding-bottom: 105px;
   }
 
-  .benefits__header::before {
+  .benefits::before {
     height: 584px;
   }
   
-  .active .benefits__header::before {
+  .active.benefits::before {
     background-image: url(img/be-active_960.jpg);
   }
   
-  .contact .benefits__header::before {
+  .contact.benefits::before {
     background-image: url(img/find-contact_960.jpg);
   }
   
-  .work .benefits__header::before {
+  .work.benefits::before {
     background-image: url(img/work-it_960.jpg);
   }
 
@@ -512,7 +518,7 @@ body {
     margin-top: 492px;
     margin-left: 32px;
     margin-bottom: 55px;
-    font: normal 700 1.5rem/1.5 Open Sans, Arial, sans-serif;
+    font: normal 700 2.4rem/1.5 Open Sans, Arial, sans-serif;
   }
 
   .benefits__header__number::after {
@@ -524,12 +530,12 @@ body {
 
   .benefits__header h3 {
     margin: 0 0 40px 32px;
-    font: normal 700 5rem/1 Open Sans, Arial, sans-serif;
+    font: normal 700 8rem/1 Open Sans, Arial, sans-serif;
   }
 
   .benefits p {
     padding: 0 100px 0 32px;
-    font: normal 400 1.5rem/1.5 Open Sans, Arial, sans-serif;
+    font: normal 400 2.4rem/1.5 Open Sans, Arial, sans-serif;
   }
 
   .footer {
@@ -541,17 +547,214 @@ body {
   }
 
   .footer h2 {
-    font: normal 700 5rem/1.2 Open Sans, Arial, sans-serif;
+    font: normal 700 8rem/1.2 Open Sans, Arial, sans-serif;
     text-align: center;
   }
 
   .footer h4 {
     margin-bottom: 290px;
-    font: normal 400 2.25rem/1.2 Open Sans, Arial, sans-serif;
+    font: normal 400 3.6rem/1.2 Open Sans, Arial, sans-serif;
     text-align: center;
   }
 
   .footer .download-button-block {
     margin-bottom: 55px;
   }
+}
+
+@media screen and (min-width: 961px) {
+
+  .first-screen {
+    padding: 40px 180px 90px;
+    background-image: url(img/football_1920.jpg);
+  }
+
+  .logo {
+    margin-bottom: 300px;
+  }
+
+  .first-screen__header {
+    width: 100%;
+    max-width: 1740px;
+    margin-bottom: 220px;
+  }
+  
+  .first-screen__header h1 {
+    width: 100%;
+    font: normal 700 9rem/1.2 Open Sans, Arial, sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  .header_second-line {
+    display: block;
+    margin: 0;
+    text-align: right;
+  }
+
+  .download-button-block {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .download-button {
+    justify-content: center;
+    width: 310px;  
+    height: 80px;
+    font: normal 400 1.4rem/1.5 Open Sans, Arial, sans-serif;
+    border-radius: 50px;
+  }
+
+  .download-button:first-child {
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+
+  .appstore-icon {
+    width: 36px;
+    height: 42px;
+    margin: 0 30px 0 0;
+  }
+
+  .googleplay-icon {
+    width: 41px;
+    height: 45px;
+    margin: 0 30px 0 0;
+  }
+
+  .members {
+    padding-top: 115px;
+  }
+
+  .members__header h2 {
+    padding-left: 0;
+    font: normal 700 8rem/1 Open Sans, Arial, sans-serif;
+  }
+
+  .members-advantages__header h3 {
+    margin-bottom: 30px;
+    font: normal 700 3.6rem/1 Open Sans, Arial, sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  .members-advantages__header__number {
+    font: normal 700 1.8rem/1.1 Open Sans, Arial, sans-serif;
+  }
+  
+  .members-advantages__header__number::after {
+    top: 23px;
+    left: 0;
+    width: 20px;
+    height: 4px;
+  }
+
+  .members-advantages p {
+    max-width: 650px;
+    margin-bottom: 30px;
+    font: normal 400 2rem/1.5 Open Sans, Arial, sans-serif;
+  }
+
+  .athlets .members__header {
+    margin-left: 53%;
+    margin-bottom: 60px;
+  }
+
+  .athlets .members-advantages {
+    padding: 60px 180px 30px 53%;
+  }
+  
+  .athlets .members__header::after {
+    top: -65px;
+    left: -610px;
+    width: 570px;
+    height: 920px;
+    background-image: url(img/footballer_566.png);
+  }
+
+  .players.members {
+    overflow: hidden;
+  }
+
+  .member-advantages__wrapper {
+    width: 100%;
+    max-width: 1560px;
+    padding-left: 180px;
+  }
+  
+  .players .members__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    padding-left: 0;
+  }
+  
+  .players .members__header::after {
+    top: -100px;
+    left: 45%;
+    width: 980px;
+    height: 830px;
+    background-image: url(img/basketballer_991.png);
+  }
+  
+  .players .members-advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0 30px;
+  }
+
+/* Вот в этом блоке всё очень грустно и печально */
+
+  .benefits-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .benefits {
+    padding-top: 260px;
+    min-height: 730px;
+  }
+
+  /* .benefits-content {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  .benefits__header h3 {
+    font: normal 700 8rem/1.2 Open sans, Arial, sans-serif;
+    margin-left: 1100px;
+  }
+
+  .benefits::before {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+  }
+
+  .benefits__header__number {
+    position: absolute;
+    z-index: 1;
+    left: 44%;
+    top: -30px;
+    padding: 75px;
+    font-size: 2.4rem;
+  }
+
+  .benefits__header__number::after {
+    top: 110px;
+    left: 74px;
+    width: 28px;
+  }
+
+  .benefits p {
+    margin-left: 1100px;
+    padding: 0 180px 0 0;
+    font: normal 400 2.4rem/1.2 Open sans, Arial, sans-serif;
+  }
+
+
 }
