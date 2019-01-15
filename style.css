@@ -1,13 +1,13 @@
 @font-face {
-  font-family: Open Sans, Arial, sans-serif;
-  src: url(fonts/OpenSans-Bold.ttf)
+  font-family: "Open Sans";
+  src: url(fonts/OpenSans-Bold.ttf);
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Open Sans, Arial, sans-serif;
-  src: url(fonts/OpenSans-Regular.ttf)
+  font-family: "Open Sans";
+  src: url(fonts/OpenSans-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
@@ -26,9 +26,6 @@ body {
 
 .first-screen {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
   min-width: 320px;
   padding: 33px 20px 84px 20px;
@@ -49,20 +46,18 @@ body {
 }
 
 .logo {
+  display: block;
   position: relative;
   z-index: 1;
   width: 133px;
-  margin-bottom: 130px;
+  margin: 0 auto 130px;
   fill:#ffffff;
 }
  
 .first-screen__header {
   position: relative;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 90px;
+  margin: 0 auto 90px;
   width: 260px;
 }
 
@@ -82,15 +77,15 @@ body {
 .download-button-block {
   position: relative;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .download-button {
   display: flex;
+  align-items: center;
   width: 280px;  
   height: 35px;
+  margin: 0 auto;
+  text-decoration: none;
   font: normal 400 0.8rem/1.5 Open Sans, Arial, sans-serif;
   text-transform: uppercase;
   text-align: left;
@@ -104,7 +99,7 @@ body {
   width: 20px;
   height: 24px;
   margin-right: 10px;
-  margin-left: 83px;
+  margin-left: 92px;
   fill: #ffffff;
 }
 
@@ -112,7 +107,7 @@ body {
   width: 22px;
   height: 24px;
   margin-right: 10px;
-  margin-left: 83px;
+  margin-left: 92px;
   fill: #ffffff;
 }
 
@@ -125,13 +120,8 @@ body {
   padding-top: 15px;
 }
 
-.members__header {
-  position: relative;
-  margin-bottom: 235px;
-}
-
-.members__header h2 {
-  margin: 0;
+.members h2 {
+  margin: 0 0 20px 0;
   padding-left: 20px;
   font: normal 700 5rem/1.2 Open Sans, Arial, sans-serif;
   text-transform: uppercase;
@@ -139,31 +129,29 @@ body {
   color: #e7e7e7;
 }
 
-.members__header::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 300px;
-  top: 60px;
-  background-repeat: no-repeat;
-  background-position: center;
+.athlets .members__picture {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: -60px;
 }
 
-.athlets .members__header::after {
-  background-image: url(img/footballer_192.png);
-}
-
-.players .members__header::after {
-  background-image: url(img/basketballer_302.png);
+.players .members__picture {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: -30px;
 }
 
 .members-advantages {
-  padding: 80px 20px 45px;
+  padding: 60px 20px 50px;
 }
 
 .members-advantages__header {
   display: flex;
   align-items: flex-start;
+}
+
+.connection .members-advantages__header {
+  margin-top: 20px;
 }
 
 .members-advantages__header h3 {
@@ -223,47 +211,21 @@ body {
 }
 
 .benefits {
-  position: relative;
-  display: flex;
-  flex-direction: column;
   padding-bottom: 65px;
   min-width: 320px;
+  font-size: 0;
 }
 
-.benefits::before {
-  content: "";
-  position: absolute;
-  z-index: 0;
+.benefits__picture {
   width: 100%;
-  height: 350px;
-  top: 0px;
-  left: 0px;
-  background-image: url(img/be-active_640.jpg);
-  background-size: cover;
-}
-
-.active.benefits::before {
-  background-image: url(img/be-active_640.jpg);
-}
-
-.contact.benefits::before {
-  background-image: url(img/find-contact_640.jpg);
-}
-
-.work.benefits::before {
-  background-image: url(img/work-it_640.jpg);
-}
-
-.benefits__header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .benefits__header__number {
   position: relative;
+  display: block;
+  width: 70px;
   padding: 26px;
-  margin: 290px 0 20px 20px;
+  margin: -60px 0 20px 20px;
   font: normal 700 1.4rem/1.5 Open Sans, Arial, sans-serif;
   color: #ffffff;
   background-color:#5e42b0;
@@ -279,7 +241,7 @@ body {
   background-color:#8f7bc8;
 }
 
-.benefits__header h3 {
+.benefits h3 {
   margin: 0 0 25px 20px;
   font: normal 700 2.8rem/1.2 Open Sans, Arial, sans-serif;
   letter-spacing: 1px;
@@ -296,11 +258,9 @@ body {
 
 .footer {
   position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   padding: 100px 20px 10px;
   min-width: 320px;
+  text-align: center;
   background-image: url(img/game_767.jpg);
   background-size: cover;
 }
@@ -316,7 +276,8 @@ body {
   opacity: 0.9;
 }
 
-.short-logo__wrapper {
+.short-logo__background {
+  display: inline-block;
   position: relative;
   z-index: 1;
   padding: 12px 12px;
@@ -340,7 +301,7 @@ body {
   letter-spacing: 1px;
 }
 
-.footer h4 {
+.footer p {
   position: relative;
   z-index: 1;
   margin-top: 0;
@@ -389,7 +350,7 @@ body {
   }
 
   .download-button-block {
-    flex-direction: row;
+    display: flex;
     justify-content: center;
   }
 
@@ -418,46 +379,30 @@ body {
     margin: 0 30px 0 0;
   }
 
+/* Начало блока members */
+
   .members {
+    position: relative;
     padding-top: 80px;
   }
 
-  .athlets .members__header {
+  .athlets h2 {
     margin-left: 290px;
-    margin-bottom: 20px;
+    padding: 0;
+    font-size: 8rem;
   }
   
-  .players .members__header {
-    margin-left: 32px;
-    margin-bottom: 20px;
+  .members__picture {
+    position: absolute;
   }
-
-  .members__header h2 {
-    padding-left: 0;
-    font: normal 700 8rem/1 Open Sans, Arial, sans-serif;
-  }
-
-  .athlets .members__header::after {
-    top: 45px;
-    left: -460px;
-    width: 500px;
-    height: 700px;
-  }
-
-  .players .members__header::after {
-    top: -60px;
-    right: 0;
-    left: auto;
-    width: 440px;
-    height: 550px;
+  
+  .athlets .members__picture {
+    left: -160px;
+    top: 150px;
   }
 
   .athlets .members-advantages {
     padding: 40px 50px 25px 290px;
-  }
-
-  .players .members-advantages {
-    padding: 40px 0 25px 32px;
   }
 
   .members-advantages__header h3 {
@@ -477,45 +422,38 @@ body {
     height: 4px;
   }
 
-  .athlets .members__header::after {
-    background-image: url(img/footballer_497.png);
-  }
-
-  .players .members__header::after {
-    background-image: url(img/basketballer_436.png);
-  }
-
   .members-advantages p {
     font: normal 400 1.6rem/1.5 Open Sans, Arial, sans-serif;
+  }
+  
+  .players h2 {
+    padding-left: 20px;
+    font-size: 8rem;
+  }
+
+  .players .members__picture {
+    right: 0;
+    top: 40px;
+  }
+  
+  .players .members-advantages {
+    padding: 40px 0 25px 32px;
   }
 
   .players .members-advantages p {
     max-width: 50%;
   }
 
+/* Начало блока benefits */
+
   .benefits {
     padding-bottom: 105px;
   }
 
-  .benefits::before {
-    height: 584px;
-  }
-  
-  .active.benefits::before {
-    background-image: url(img/be-active_960.jpg);
-  }
-  
-  .contact.benefits::before {
-    background-image: url(img/find-contact_960.jpg);
-  }
-  
-  .work.benefits::before {
-    background-image: url(img/work-it_960.jpg);
-  }
-
   .benefits__header__number {
+    width: 120px;
     padding: 46px;
-    margin-top: 492px;
+    margin-top: -80px;
     margin-left: 32px;
     margin-bottom: 55px;
     font: normal 700 2.4rem/1.5 Open Sans, Arial, sans-serif;
@@ -528,7 +466,7 @@ body {
     height: 5px;
   }
 
-  .benefits__header h3 {
+  .benefits h3 {
     margin: 0 0 40px 32px;
     font: normal 700 8rem/1 Open Sans, Arial, sans-serif;
   }
@@ -538,11 +476,13 @@ body {
     font: normal 400 2.4rem/1.5 Open Sans, Arial, sans-serif;
   }
 
-  .footer {
+/* Начало блока footer */
+
+  .footer { 
     padding: 125px 32px 20px;
   }
 
-  .short-logo__wrapper {
+  .short-logo__background {
     margin-bottom: 80px;
   }
 
@@ -551,7 +491,7 @@ body {
     text-align: center;
   }
 
-  .footer h4 {
+  .footer p {
     margin-bottom: 290px;
     font: normal 400 3.6rem/1.2 Open Sans, Arial, sans-serif;
     text-align: center;
@@ -594,7 +534,7 @@ body {
   }
 
   .download-button-block {
-    flex-direction: row;
+    display: flex;
     justify-content: center;
   }
 
@@ -602,6 +542,7 @@ body {
     justify-content: center;
     width: 310px;  
     height: 80px;
+    margin: 0;
     font: normal 400 1.4rem/1.5 Open Sans, Arial, sans-serif;
     border-radius: 50px;
   }
@@ -623,15 +564,29 @@ body {
     margin: 0 30px 0 0;
   }
 
+/* Начало блока members */
+
   .members {
+    position: relative;
     padding-top: 115px;
   }
 
-  .members__header h2 {
-    padding-left: 0;
-    font: normal 700 8rem/1 Open Sans, Arial, sans-serif;
+  .athlets h2 {
+    margin-left: 0;
+    padding-left: 53%;
+    font-size: 8rem;
+  }
+  
+  .athlets .members__picture {
+    position: absolute;
+    right: 50%;
+    top: 150px;
   }
 
+  .athlets .members-advantages {
+    padding: 60px 180px 30px 53%;
+  }
+  
   .members-advantages__header h3 {
     margin-bottom: 30px;
     font: normal 700 3.6rem/1 Open Sans, Arial, sans-serif;
@@ -648,113 +603,141 @@ body {
     width: 20px;
     height: 4px;
   }
-
+  
   .members-advantages p {
     max-width: 650px;
     margin-bottom: 30px;
     font: normal 400 2rem/1.5 Open Sans, Arial, sans-serif;
   }
 
-  .athlets .members__header {
-    margin-left: 53%;
-    margin-bottom: 60px;
-  }
-
-  .athlets .members-advantages {
-    padding: 60px 180px 30px 53%;
-  }
-  
-  .athlets .members__header::after {
-    top: -65px;
-    left: -610px;
-    width: 570px;
-    height: 920px;
-    background-image: url(img/footballer_566.png);
-  }
-
   .players.members {
     overflow: hidden;
   }
 
-  .member-advantages__wrapper {
-    width: 100%;
-    max-width: 1560px;
-    padding-left: 180px;
+  .players h2 {
+    margin-left: 0;
+    padding-left: 15%;
+    font-size: 8rem;
   }
   
-  .players .members__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 60px;
-    padding-left: 0;
+  .players .members__picture {
+    position: absolute;
+    left: 50%;
+    top: 0;
   }
-  
-  .players .members__header::after {
-    top: -100px;
-    left: 45%;
-    width: 980px;
-    height: 830px;
-    background-image: url(img/basketballer_991.png);
-  }
-  
+
   .players .members-advantages {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 0 30px;
-  }
-
-/* Вот в этом блоке всё очень грустно и печально */
-
-  .benefits-wrapper {
-    display: flex;
-    flex-direction: column;
-    max-width: 1920px;
-    margin: 0 auto;
+    padding: 60px 15% 30px;
   }
 
   .benefits {
-    padding-top: 260px;
-    min-height: 730px;
-  }
-
-  /* .benefits-content {
     display: flex;
-    flex-direction: column;
-  } */
-
-  .benefits__header h3 {
-    font: normal 700 8rem/1.2 Open sans, Arial, sans-serif;
-    margin-left: 1100px;
+    padding-bottom: 0;
   }
 
-  .benefits::before {
-    position: absolute;
+  .benefits-header__wrapper {
+    position: relative;
     width: 50%;
-    height: 100%;
   }
-
+  
+  .benefits-content__wrapper {
+    width: 50%;
+  }
+  
+  .benefits__picture {
+    display: block;
+    width: 100%;
+  }
+  
   .benefits__header__number {
     position: absolute;
-    z-index: 1;
-    left: 44%;
-    top: -30px;
-    padding: 75px;
+    display: inline-block;
+    padding: 60px;
+    right: -70px;
+    top: 30%;
+    margin: 0;
+    width: auto;
+    font-size: 2.4rem;
+  }
+  
+  .benefits__header__number::after {
+    width: 27px;
+    height: 6px;
+    top: 94px;
+    left: 59px;
+  }
+  
+  .benefits-content__wrapper {
+    padding-left: 90px;
+    padding-top: 11%;
+  }
+  
+  .benefits h3 {
+    font-size: 8rem;
+  }
+  
+  .benefits p {
     font-size: 2.4rem;
   }
 
-  .benefits__header__number::after {
-    top: 110px;
-    left: 74px;
-    width: 28px;
+  .benefits.contact {
+    flex-direction: row-reverse;
   }
 
-  .benefits p {
-    margin-left: 1100px;
-    padding: 0 180px 0 0;
-    font: normal 400 2.4rem/1.2 Open sans, Arial, sans-serif;
+  .contact .benefits__header__number {
+    position: absolute;
+    display: inline-block;
+    padding: 60px;
+    left: -70px;
+    right: auto;
+    top: 30%;
+    margin: 0;
+    width: auto;
+    font-size: 2.4rem;
   }
 
+  .footer {
+    padding: 230px 32px 50px;
+    background-image: url(img/game_1920.jpg);
+  }
 
+  .short-logo__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 160px;
+  }
+
+  .short-logo {
+    width: 105px;
+  }
+
+  .short-logo__background {
+    padding: 21px 16px;
+    margin-right: 35px;
+    margin-bottom: 0px;
+    border-radius: 30px;
+  }
+
+  .slogan-wrapper {
+    text-align: left;
+  }
+
+  .footer h2 {
+    font-size: 8rem;
+    margin-left: -4px;
+  }
+
+  .footer p {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .footer .download-button-block {
+    margin-bottom: 260px;
+  }
+
+  .footer .logo {
+    width: 200px;
+  }
 }
