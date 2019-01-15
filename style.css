@@ -511,6 +511,7 @@ body {
 
   .logo {
     margin-bottom: 300px;
+    width: 200px;
   }
 
   .first-screen__header {
@@ -737,7 +738,4 @@ body {
     margin-bottom: 260px;
   }
 
-  .footer .logo {
-    width: 200px;
-  }
 }
